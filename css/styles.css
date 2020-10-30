@@ -1,0 +1,796 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #fdfdfd;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+a,
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Lobster", cursive;
+}
+ul,
+li {
+  list-style: none;
+}
+
+/* Nav */
+nav {
+  top: 0;
+  width: 100vw;
+  height: 10vh;
+  background: #fbe0dc;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  position: fixed;
+  z-index: 10;
+  transition: all 0.3s;
+}
+nav .logoContainer {
+  display: flex;
+  align-items: center;
+  padding-left: 40px;
+}
+nav .logoContainer p {
+  font-size: 26px;
+  cursor: pointer;
+}
+nav .menu {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 60px;
+}
+nav .menu ul {
+  display: flex;
+  align-items: center;
+}
+nav .menu ul li {
+  margin-left: 20px;
+  list-style: none;
+}
+nav .menu ul li a {
+  display: block;
+  text-transform: capitalize;
+  color: #000;
+}
+nav .menu ul li a:hover {
+  color: #fff;
+}
+nav .menu .menuBotao {
+  width: 45px;
+  height: 45px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+  display: none;
+}
+nav .menu .menuBotao .menuIcon .bar:last-child {
+  width: 15px;
+}
+nav .menu .menuBotao.closeMenu .menuIcon .bar {
+  width: 25px;
+}
+nav .menu .menuBotao.closeMenu .menuIcon .bar:first-child {
+  transform: translateY(7px) rotate(45deg);
+}
+nav .menu .menuBotao.closeMenu .menuIcon .bar:nth-child(2) {
+  transform: scale(0);
+}
+nav .menu .menuBotao.closeMenu .menuIcon .bar:last-child {
+  transform: translateY(-7px) rotate(-45deg);
+}
+nav .menu .menuBotao .menuIcon .bar {
+  width: 25px;
+  height: 2px;
+  background: #fbe0dc;
+  transition: 0.3s ease-in-out;
+}
+nav .menu .menuBotao .menuIcon .bar:nth-child(2) {
+  width: 20px;
+  margin: 5px 0;
+}
+
+/*Header*/
+header {
+  text-align: center;
+  background-color: #fbe0dc;
+  height: 90vh;
+  width: 100%;
+  overflow: hidden;
+  margin-top: 10vh;
+}
+header .headerTitle {
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+}
+header .headerTitle h1 {
+  font-size: 58px;
+}
+header .headerTitle p {
+  margin-top: 15px;
+  font-family: "Pacifico", cursive;
+  font-size: 16px;
+}
+header img {
+  position: absolute;
+  width: 15%;
+  height: auto;
+  z-index: 2;
+}
+header .headerImg1 {
+  top: 10vh;
+  left: 0;
+  transform: rotate(90deg);
+}
+header .headerImg2 {
+  top: 10vh;
+  right: 0;
+  transform: rotate(180deg);
+}
+header .headerImg3 {
+  bottom: 0vh;
+  left: 0;
+  transform: rotate(0deg);
+}
+header .headerImg4 {
+  bottom: 0vh;
+  right: 0;
+  transform: rotate(270deg);
+}
+.headerFrase{
+  position: absolute;
+  bottom: 20vh;
+  right: 20vw;
+  font-size: 22px;
+  transform: rotate(-15deg);
+  font-family: "Pacifico", cursive;
+}
+.linha{
+  border: 3px solid #434242;
+  width: 96.6vw;
+  height: 86vh;
+  position: absolute;
+  top: 12vh;
+  left: 1vw;
+}
+
+/* Sobre */
+#sobre {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  padding: 0 15%;
+  grid-template-areas: "logo logo logo logo descricao descricao descricao descricao descricao descricao";
+  grid-template-rows: 1fr;
+  gap: 1px 1px;
+  align-items: center;
+}
+#sobre .logo {
+  grid-row: 1;
+  grid-column: logo / span 5;
+  width: 70%;
+  height: 40%;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 0 20px -10px #000000;
+  justify-self: end;
+  z-index: 1;
+  overflow: hidden;
+}
+#sobre .logo img {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: scale-down;
+}
+#sobre .descricao {
+  grid-row: 1;
+  grid-area: descricao;
+  width: 70%;
+  height: 50%;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 0 20px -10px #000000;
+  justify-self: start;
+  padding: 30px;
+  padding-left: 80px;
+  flex-direction: column;
+  align-items: flex-start;
+}
+#sobre .descricao p:nth-child(1) {
+  margin-bottom: 40px;
+}
+#sobre .descricao p:nth-child(2) {
+  margin-bottom: 20px;
+}
+#sobre .descricao p {
+  font-family: "Pacifico", cursive;
+}
+/* Receitas*/
+
+.flexboxContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.displayNone {
+  display: none;
+}
+.displayPaginacaoNone {
+  display: none;
+}
+#receitas {
+  padding: 20px;
+  width: 100%;
+  height: auto;
+  flex-direction: column;
+}
+.title {
+  width: 100%;
+  height: 10vh;
+}
+.title p {
+  font-size: 24px;
+}
+.title .line {
+  width: 122px;
+  height: 0px;
+  border-radius: 40px;
+  border: 2px solid #000000;
+}
+.title .text {
+  margin: 0 40px 0 40px;
+  font-size: 18px;
+}
+#receitas ul {
+  display: flex;
+  margin-bottom: 35px;
+}
+#receitas ul li {
+  list-style: none;
+  background: #ffffff;
+  width: 100px;
+  height: 60px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgba(0, 0, 0, 0.2);
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+  transition: all 0.5s ease;
+}
+#receitas ul li.active {
+  background: #fbe0dc;
+  color: #000000;
+  box-shadow: 0px 8px 16px -8px rgba(0, 0, 0, 0.25);
+}
+#receitas .product {
+  flex-wrap: wrap;
+}
+#receitas .product .itemBox {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  margin: 0px 50px 35px 50px;
+  border-radius: 20px;
+  transition: all 1.3s ease;
+  overflow: hidden;
+  background: #fbe0dc;
+  cursor: pointer;
+}
+#receitas .product .itemBox:hover img {
+  opacity: 0.3;
+}
+#receitas .product .itemBox img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 1.3s ease;
+}
+#paginacao {
+  width: 100%;
+  height: 30px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+#paginacao .container {
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+#paginacao .container .button {
+  width: 20px;
+  height: 20px;
+  float: left;
+  margin-right: 20px;
+  background: #fbe0dc;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s ease width;
+}
+#paginacao .container .button:last-child {
+  margin-right: 0;
+}
+#paginacao .container .button.active {
+  width: 60px;
+  cursor: auto;
+}
+
+/* Modal*/
+#modalContainer {
+  width: 100vw;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  z-index: 999;
+}
+.modal {
+  display: block;
+  position: relative;
+  width: 30vw;
+  height: 50vh;
+  border-radius: 20px;
+  background: #ffffff;
+  box-shadow: 0 0 40px -5px #000000;
+  top: 30vh;
+  left: 35vw;
+  z-index: 999;
+  overflow: hidden;
+  transition: all 1s ease;
+}
+.modal .modalHeader {
+  width: 100%;
+  height: 15%;
+  background: #fbe0dc;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.modal .modalHeader .close {
+  position: relative;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  overflow: hidden;
+  margin-right: 10px;
+}
+.close:hover::before,
+.close:hover::after {
+  background: #fff;
+}
+.close::before,
+.close::after {
+  content: "";
+  position: absolute;
+  border-radius: 5px;
+  height: 7px;
+  margin-top: -4px;
+  width: 100%;
+  top: 50%;
+  left: 0;
+  background: #000;
+}
+.close::before {
+  transform: rotate(45deg);
+}
+.close::after {
+  transform: rotate(-45deg);
+}
+.modal .modalConteudo {
+  width: 100%;
+  height: 85%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 1px 1px;
+  grid-template-areas: "imgModal texto";
+  align-items: center;
+  justify-items: center;
+}
+.modal .modalConteudo .imgModal {
+  grid-area: imgModal;
+  background: #c4c4c4;
+  width: 80%;
+  height: 60%;
+  border-radius: 10%;
+  overflow: hidden;
+}
+.modal .modalConteudo .imgModal img {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.modal .modalConteudo .textoContainer {
+  grid-area: texto;
+  justify-self: center;
+  align-self: flex-start;
+  overflow: hidden;
+  padding: 20px;
+  padding-top: 60px;
+  text-align: center;
+}
+.modal .modalConteudo .textoContainer .titleText {
+  margin-bottom: 20px;
+}
+.modal .modalConteudo .textoContainer p {
+  font-size: 16;
+}
+.displayBlock {
+  display: block;
+}
+
+/* Contato */
+
+#contato {
+  width: 100%;
+  height: 60vh;
+  background: #fbe0dc;
+}
+#contato .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas: "contatoInfo contatoImg";
+  width: 100%;
+  height: 80%;
+  overflow: hidden;
+  padding: 20px;
+}
+
+#contato .container .contatoInfo {
+  grid-area: contatoInfo;
+  display: grid;
+  grid-template-columns: 0.8fr 0.9fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas: "colTelefone colHorario";
+  width: 100%;
+  height: 100%;
+  padding-left: 10vw;
+}
+#contato .container .contatoInfo .colTelefone {
+  grid-area: colTelefone;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 20px;
+}
+#contato .container .contatoInfo .colTelefone .icons {
+  margin-left: 20px;
+}
+#contato .container .contatoInfo .colTelefone .icons li {
+  margin-right: 0px;
+}
+#contato .container .contatoInfo .colHorario {
+  grid-area: colHorario;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 20px;
+}
+#contato .container .contatoImg {
+  grid-area: contatoImg;
+}
+#contato .container .contatoImg .imgContainer {
+  width: 60%;
+  height: 70%;
+  border-radius: 20px;
+  overflow: hidden;
+}
+#contato .container p {
+  font-size: 18px;
+}
+#contato .container li {
+  margin: 20px 0px 20px 20px;
+  font-size: 16px;
+}
+
+.footerClass {
+  width: 100%;
+  height: 10vh;
+  background-color: #353535;
+  justify-content: flex-start;
+}
+.footerClass p {
+  margin-left: 10vw;
+  color: #fff;
+  font-size: 12px;
+  font-family: Arial;
+}
+
+@media only screen and (max-width: 1030px) {
+  #sobre {
+    height: 70vh;
+  }
+  #sobre .logo {
+    width: 70%;
+    height: 30%;
+  }
+  #sobre .descricao {
+    width: 90%;
+    height: 40%;
+  }
+  #sobre .descricao p {
+    font-size: 18px;
+  }
+  #receitas .title .text {
+    font-size: 24px;
+  }
+  #receitas .title .line {
+    width: 150px;
+  }
+  #receitas ul li {
+    width: 108px;
+    height: 79px;
+    font-size: 20px;
+  }
+  #modalContainer .modal {
+    top: 25vh;
+    left: 20vw;
+    width: 60vw;
+    height: 50vh;
+    box-shadow: 0 0 20px -5px #000000;
+  }
+  #contato {
+    width: 100%;
+    height: 30vh;
+  }
+  #contato .container {
+    height: 60%;
+    grid-template-columns: 1.1fr 0.9fr;
+  }
+  #contato .container .contatoInfo {
+    padding-left: 5vw;
+  }
+  #contato .container p {
+    font-size: 22px;
+  }
+  #contato .container li {
+    font-size: 20px;
+  }
+  .headerFrase{
+    bottom: 16vh;
+    right: 10vw;
+    font-size: 30px;
+  }
+  .linha{
+    width: 97.8vw;
+    height: 88.7vh;
+    position: absolute;
+    top: 10.6vh;
+    left: 1vw;
+  }
+}
+@media screen and (max-width: 770px) {
+  nav .menu {
+    padding-right: 40px;
+  }
+  nav .menu .menuBotao {
+    display: flex;
+  }
+  nav .menu ul {
+    display: inline-block;
+    width: 100vw;
+    height: 0;
+    background: #fff;
+    position: absolute;
+    top: 64px;
+    box-shadow: 0 5px 30px -4px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s;
+  }
+  nav .menu ul.showMenu {
+    height: 280px;
+    left: 0;
+  }
+  nav .menu ul.showMenu li {
+    height: 80px;
+    opacity: 1;
+    visibility: visible;
+  }
+  nav .menu ul li {
+    width: 50%;
+    height: 80px;
+    float: left;
+    padding-left: 40px;
+    opacity: 0;
+    visibility: hidden;
+    margin-left: 0;
+    transition: all 0.3s 0.1s;
+  }
+  nav .menu ul li:first-child,
+  nav .menu ul li:nth-child(2) {
+    margin-top: 80px;
+  }
+  #sobre .logo {
+    width: 95%;
+  }
+  #sobre .descricao {
+    height: 50%;
+  }
+  #contato {
+    width: 100%;
+    height: 40vh;
+  }
+  #contato .container {
+    height: 70%;
+    grid-template-columns: 1.1fr 0.9fr;
+  }
+  #contato .container .contatoInfo {
+    padding-left: 2vw;
+  }
+  #contato .container p {
+    font-size: 18px;
+  }
+  #contato .container li {
+    font-size: 16px;
+  }
+  #contato .container .contatoImg .imgContainer {
+    width: 60%;
+    height: 60%;
+  }
+  .footerClass p {
+    font-size: 14px;
+  }
+  
+}
+@media only screen and (max-width: 480px) {
+  .title p {
+    font-size: 20px;
+  }
+  .title .line {
+    width: 80px;
+  }
+  nav .menu .menuBotao {
+    display: flex;
+  }
+  header {
+    margin-top: 10vh;
+    height: 82vh;
+    overflow: hidden;
+  }
+  header img {
+    width: 20%;
+  }
+  header .headerTitle h1 {
+    font-size: 38px;
+  }
+  header .headerTitle p {
+    font-size: 14px;
+  }
+  .linha{
+    height: 81vh;
+    border: 2px solid #434242;
+  }
+  #sobre {
+    height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "logo"
+      "logo"
+      "logo"
+      "logo"
+      "descricao"
+      "descricao"
+      "descricao"
+      "descricao"
+      "descricao";
+    padding-bottom: 45%;
+  }
+  #sobre .logo {
+    width: 60%;
+    height: 50%;
+    grid-row: logo / span 5;
+    grid-column: 1;
+    justify-self: center;
+    align-self: flex-end;
+  }
+  #sobre .descricao {
+    width: 100%;
+    height: 100%;
+    padding-left: 30px;
+    padding-top: 80px;
+    justify-self: center;
+    align-self: flex-start;
+  }
+  #sobre .descricao p:nth-child(1) {
+    margin-bottom: 20px;
+  }
+  #sobre .descricao p {
+    font-size: 12px;
+  }
+  #receitas .title .text {
+    font-size: 16px;
+  }
+  #receitas .title .line {
+    width: 80px;
+  }
+  #receitas ul li {
+    width: 68px;
+    height: 39px;
+    font-size: 12px;
+  }
+  #receitas .product .itemBox {
+    width: 250px;
+    height: 250px;
+  }
+  #modalContainer .modal {
+    top: 30vh;
+    left: 5vw;
+    width: 90vw;
+    height: 40vh;
+    box-shadow: 0 0 20px -5px #000000;
+  }
+  #contato {
+    width: 100%;
+    height: 70vh;
+  }
+  #contato .container {
+    height: 80%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      "contatoInfo"
+      "contatoImg";
+    padding: 10px 20px;
+  }
+  #contato .container .contatoInfo .colTelefone {
+    padding:  0px;
+  }
+  #contato .container .contatoInfo .colHorario {
+    padding: 0px 0px 0px 20px;
+  }
+  #contato .container .contatoImg .imgContainer {
+    width: 60%;
+    height: 70%;
+  }
+  .footerClass p {
+    font-size: 12px;
+  }
+  .headerFrase{
+    bottom: 18vh;
+    right: 10vw;
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 330px) {
+  #receitas ul li {
+    width: 55px;
+    height: 39px;
+    font-size: 10px;
+  }
+  #receitas .product .itemBox {
+    width: 200px;
+    height: 200px;
+  }
+}

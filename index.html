@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Bolu's</title>
+  </head>
+
+  <body>
+    <nav>
+      <div class="logoContainer">
+        <p><a href="#home">Bolu's</a></p>
+      </div>
+      <div class="menu">
+        <div class="menuBotao">
+          <div class="menuIcon">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </div>
+        </div>
+        <ul>
+          <li><a href="#home">home</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#receitas">Receitas</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <header id="home">
+      <div class="headerTitle flexboxContainer">
+        <h1>Bolu's</h1>
+        <p>Bolus, Sobremesas e Gostosuras</p>
+      </div>
+      <img class="headerImg1" src="assets/img/header.png" alt="" />
+      <img class="headerImg2" src="assets/img/header.png" alt="" />
+      <img class="headerImg3" src="assets/img/header.png" alt="" />
+      <img class="headerImg4" src="assets/img/header.png" alt="" />
+      <p class="headerFrase">Hoje não tem dieta!</p>
+      <span class="linha"></span>
+    </header>
+
+    <section id="sobre">
+      <div class="logo">
+        <img src="assets/img/logo.png" alt="logoBolus" />
+      </div>
+      <div class="descricao flexboxContainer">
+        <p>Sobre Nós:</p>
+        <p>Olá! Nós somos a Bolu’s, Bem vindo ao nosso site!</p>
+        <p>
+          Nós fazemos diversos Bolos, Doces e salgados para a região de
+          Interlagos, em São Paulo, Faça já a sua encomenda!!
+        </p>
+      </div>
+    </section>
+
+    <section id="receitas" class="flexboxContainer">
+      <div class="title flexboxContainer">
+        <div class="line"></div>
+        <div class="text"><p>Receitas</p></div>
+        <div class="line"></div>
+      </div>
+      <ul class="listaContainer">
+        <li class="list active" data-filter="all"><p>Todos</p></li>
+        <li class="list" data-filter="bolo"><p>Bolos</p></li>
+        <li class="list" data-filter="boloPote"><p>Bolos de Pote</p></li>
+        <li class="list" data-filter="doce"><p>Doces</p></li>
+        <li class="list" data-filter="salgado"><p>Salgados</p></li>
+      </ul>
+      <div class="product flexboxContainer">
+        <div class="itemBox all bolo" modal-item="Bolo Caramelizado de Coco"  tipoItem="Bolo">
+          <img src="assets/img/Bolo/BoloCaramelizadoDeCoco.jpg" alt="" />
+        </div>
+        <div class="itemBox all doce" modal-item="Banoffe (Massa de Biscoito Amanteigado e recheio de Banana, Creme e Caramelo) "  tipoItem="Doce">
+          <img src="assets/img/Doce/Banoffe.jpg" alt="" />
+        </div>
+        <div
+          class="itemBox all boloPote"
+          Modal-item="Bolo Branco com recheiro de Doce de Leite com Coco"
+          tipoItem="Bolo de Pote"
+        >
+          <img
+            src="assets/img/BoloDePote/BP-BrancoComRecheiroDeDoceDeLeiteComCoco.jpg"
+            alt=""
+          />
+        </div>
+        <div class="itemBox all salgado" modal-item="Empada com recheiro de Frango ou Palmito" tipoItem="Salgado">
+          <img src="assets/img/Salgado/EmpadaComRecheiroDeFrango.jpg" alt="" />
+        </div>
+        <div class="itemBox all bolo" modal-item="Bolo de Cenoura com recheio de Brigadeiro e cobertura de Brigadeiro Gourmet" tipoItem="Bolo">
+          <img
+            src="assets/img/Bolo/BoloDeCenouraaComRecheiroDeBrigadeiroECoberturagourmet.jpg"
+            alt=""
+          />
+        </div>
+        <div class="itemBox all doce" modal-item="Rosca Doce" tipoItem="Doce">
+          <img src="assets/img/Doce/RoscaDoce.jpg" alt="" />
+        </div>
+        <div
+          class="itemBox all boloPote"
+          modal-item="Bolo Branco com recheio de Leite Ninho com Morango"
+          tipoItem="Bolo de Pote"
+        >
+          <img
+            src="assets/img/BoloDePote/BP-BrancoComRecheiroDeLeiteNinhoComMorango.jpg"
+            alt=""
+          />
+        </div>
+        <div class="itemBox all salgado" modal-item="Empadao de Queijo" tipoItem="Salgado">
+          <img src="assets/img/Salgado/EmpadaoDeQueijo.jpg" alt="" />
+        </div>
+        <div class="itemBox all bolo" modal-item="Bolo decorado com Morango e recheio de Creme Belga com Morangos" tipoItem="Bolo">
+          <img
+            src="assets/img/Bolo/BoloDecoradoComMorangoERecheiroDeCremeBelga.jpg"
+            alt=""
+          />
+        </div>
+        <div
+          class="itemBox all doce"
+          modal-item="Biscoito Amanteigado de Leite Ninho com recheio de Nutella"
+          tipoItem="Doce"
+        >
+          <img
+            src="assets/img/Doce/BiscoitoAmanteigadoDeLeiteNinho.jpg"
+            alt=""
+          />
+        </div>
+        <div
+          class="itemBox all boloPote"
+          modal-item="Bolo Branco com recheiro de Leite Ninho com Nutella"
+          tipoItem="Bolo de Pote"
+        >
+          <img
+            src="assets/img/BoloDePote/BP-BrancoComRecheiroDeLeiteNinhoComNutella.jpg"
+            alt=""
+          />
+        </div>
+        <div class="itemBox all salgado" modal-item="Hot Dog de Forno" tipoItem="Salgado">
+          <img src="assets/img/Salgado/HotDogDeForno.jpg" alt="" />
+        </div>
+        <div class="itemBox all bolo" modal-item="Bolo Integral de Banana" tipoItem="Bolo">
+          <img src="assets/img/Bolo/BoloDeFubaComGoiabada.jpg" alt="" />
+        </div>
+        <div class="itemBox all doce" modal-item="Barra de Chocolate ao Leite ou Chocolate Branco com Oreo e recheio de Leite Ninho com Nutella" tipoItem="Doce">
+          <img src="assets/img/Doce/BarraDeChocolate.jpg" alt="" />
+        </div>
+        <div
+          class="itemBox all boloPote"
+          modal-item="Bolo de Chocolate com recheio de Mousse de Chocolate Trufado"
+          tipoItem="Bolo de Pote"
+        >
+          <img
+            src="assets/img/BoloDePote/BP-ChocolateEMousseDeChocolateTrufado.jpg"
+            alt=""
+          />
+        </div>
+        <div class="itemBox all salgado" modal-item="Mini Salgados" tipoItem="Salgado">
+          <img src="assets/img/Salgado/MiniSalgados.jpg" alt="" />
+        </div>
+        <div class="itemBox all bolo" modal-item="Bolo de Fubá com Goiabada" tipoItem="Bolo">
+          <img src="assets/img/Bolo/BoloDeFubaComGoiabada2.jpg" alt="" />
+        </div>
+        <div
+          class="itemBox all doce"
+          modal-item="Broinha de Fubá com recheio de Goiabada"
+          tipoItem="Doce"
+        >
+          <img
+            src="assets/img/Doce/BroinhaDeFubaComRecheioDeGoiabada.jpg"
+            alt=""
+          />
+        </div>
+
+        <div
+          class="itemBox all boloPote"
+          modal-item="Bolo de Chocolate com recheio de Creme de Danette"
+          tipoItem="Bolo de Pote"
+        >
+          <img
+            src="assets/img/BoloDePote/BP-ChocolateEMousseDeChocolateTrufado2.jpg"
+            alt=""
+          />
+        </div>
+        <div class="itemBox all salgado" modal-item="Pão Caseiro" tipoItem="Salgado">
+          <img src="assets/img/Salgado/PaoCaseiro.jpg" alt="" />
+        </div>
+        <div class="itemBox all bolo" modal-item="Bolo de Fubá Cremoso" tipoItem="Bolo">
+          <img src="assets/img/Bolo/BoloDeFubaCremoso.jpg" alt="" />
+        </div>
+        <div class="itemBox all doce" modal-item="Brownie Tradicional" tipoItem="Doce">
+          <img src="assets/img/Doce/BrownieTradicional.jpg" alt="" />
+        </div>
+        <div class="itemBox all boloPote" modal-item="Bolo com recheiro de ChocoNinho"
+        tipoItem="Bolo de Pote">
+          <img
+            src="assets/img/BoloDePote/BP-ComRecheiroDeChocoNinho.jpg"
+            alt=""
+          />
+        </div>
+        <div class="itemBox all salgado" modal-item="Pão Caseiro recheado com Queijo, Presunto e Tomate" tipoItem="Salgado">
+          <img src="assets/img/Salgado/PaoCaseiroRecheado.jpg" alt="" />
+        </div>
+        <div class="itemBox all bolo" modal-item="Bolo de Laranja com cobertura de Leite Condensado" tipoItem="Bolo">
+          <img
+            src="assets/img/Bolo/BoloDeLaranjaComCoberturaDeLeite.jpg"
+            alt=""
+          />
+        </div>
+        <div class="itemBox all doce" modal-item="Canjica" tipoItem="Doce">
+          <img src="assets/img/Doce/Canjica.jpg" alt="" />
+        </div>
+        <div
+          class="itemBox all boloPote"
+          modal-item="Bolo de Chocolate com recheiro de Mousse de Maracujá"
+          tipoItem="Bolo de Pote"
+        >
+          <img
+            src="assets/img/BoloDePote/BP-ChocolateComRecheiroDeMusseDeMaracuja.jpg"
+            alt=""
+          />
+        </div>
+        <div class="itemBox all salgado" modal-item="Pastel de Forno de Carne ou Palmito" tipoItem="Salgado">
+          <img src="assets/img/Salgado/PastelDeForno.jpg" alt="" />
+        </div>
+        <div class="itemBox all bolo" modal-item="Bolo de Milho" tipoItem="Bolo">
+          <img src="assets/img/Bolo/BoloDeMilho.jpg" alt="" />
+        </div>
+        <div class="itemBox all doce" modal-item="Pão de Mel" tipoItem="Doce">
+          <img src="assets/img/Doce/PaoDeMel.jpg" alt="" />
+        </div>
+        <div
+          class="itemBox all boloPote"
+          modal-item="Bolo de Chocolate com recheiro de Brigadeiro de Nutella"
+          tipoItem="Bolo de Pote"
+        >
+          <img
+            src="assets/img/BoloDePote/BP-ChocolateComRecheiroDeBrigadeiroDeNutella.jpg"
+            alt=""
+          />
+        </div>
+        <div class="itemBox all salgado" modal-item="Quiche de 4 Queijos" tipoItem="Salgado">
+          <img src="assets/img/Salgado/QuicheDe4Queijos.jpg" alt="" />
+        </div>
+        <div class="itemBox all bolo" modal-item="Bolo de Queijadinha" tipoItem="Bolo">
+          <img src="assets/img/Bolo/BoloDeQueijadinha.jpg" alt="" />
+        </div>
+        <div
+          class="itemBox all bolo"
+          modal-item="Bolo de Cenoura com cobertura de Chocolate"
+          tipoItem="Bolo"
+        >
+          <img
+            src="assets/img/Bolo/BoloDeCenouraComCoberturaDeChocolate.jpg"
+            alt=""
+          />
+        </div>
+        <div class="itemBox all doce" modal-item="Pudim Tradicional" tipoItem="Doce">
+          <img src="assets/img/Doce/PudimTradicional.jpg" alt="" />
+        </div>
+        <div
+          class="itemBox all boloPote"
+          modal-item="Bolo de Chocolate com recheiro de Creme de Alpino"
+          tipoItem="Bolo de Pote"
+        >
+          <img
+            src="assets/img/BoloDePote/BP-ChocolateComRecheiroDeCreme.jpg"
+            alt=""
+          />
+        </div>
+        <div class="itemBox all salgado" modal-item="Torta com recheiro de Frango com Requeijão, Carne Maluca ou Palmito" tipoItem="Salgado">
+          <img src="assets/img/Salgado/TortaComRecheiroDeFrango.jpg" alt="" />
+        </div>
+        <div
+          class="itemBox all bolo"
+          modal-item="Bolo de Queijo com calda de Goiabada"
+          tipoItem="Bolo"
+        >
+          <img
+            src="assets/img/Bolo/BoloDeQueijoComCaldaDeGoiabada.jpg"
+            alt=""
+          />
+        </div>
+        <div class="itemBox all doce" modal-item="Torta de Limão de Pote" tipoItem="Doce">
+          <img src="assets/img/Doce/TortaDeLimaoDePote.jpg" alt="" />
+        </div>
+        <div class="itemBox all bolo" modal-item="Bolo Decorado (Recheio e Decoração à escolha do cliente)" tipoItem="Bolo">
+          <img src="assets/img/Bolo/BoloDecorado.jpg" alt="" />
+        </div>
+        <div
+          class="itemBox all boloPote"
+          modal-item="Bolo de Chocolate com recheiro de Mousse de Chocolate"
+          tipoItem="Bolo de Pote"
+        >
+          <img
+            src="assets/img/BoloDePote/BP-ChocolateComRecheiroDeMousseDeChocolate.jpg"
+            alt=""
+          />
+        </div>
+        <div class="itemBox all salgado" modal-item="Torta de Milho com recheio de Calabresa e Requeijão" tipoItem="Salgado">
+          <img src="assets/img/Salgado/TortaDeMilho.jpg" alt="" />
+        </div>
+        <div class="itemBox all bolo" modal-item="Bolo gourmet de Brigadeiro" tipoItem="Bolo">
+          <img src="assets/img/Bolo/BoloGourmetDeBrigadeiro.jpg" alt="" />
+        </div>
+        <div class="itemBox all doce" modal-item="Trufas com recheio de Café, Maracujá, Chocolate, Coco, Ninho com Nutella, Paçoca ou Limão" tipoItem="Doce">
+          <img src="assets/img/Doce/Trufas.jpg" alt="" />
+        </div>
+        <div
+          class="itemBox all boloPote"
+          modal-item="Bolo de Chocolate com recheiro de Mousse de Leite Ninho"
+          tipoItem="Bolo de Pote"
+        >
+          <img
+            src="assets/img/BoloDePote/BP-ChocolateComRecheiroDeMousseDeLeiteNinho.jpg"
+            alt=""
+          />
+        </div>
+        <div class="itemBox all bolo" modal-item="Bolo de Churros" tipoItem="Bolo">
+          <img src="assets/img/Bolo/BoloDeChurros.jpg" alt="" />
+        </div>
+        <div class="itemBox all salgado" modal-item="Torta Vegana de Abobrinha" tipoItem="Salgado">
+          <img src="assets/img/Salgado/TortaVeganaDeAbobrinha.jpg" alt="" />
+        </div>
+        <div class="itemBox all bolo" modal-item="Bolo Integral de Maças, Bananas e Passas" tipoItem="Bolo">
+          <img src="assets/img/Bolo/BoloIntregralDeMaca2.jpg" alt="" />
+        </div>
+        <div
+          class="itemBox all doce"
+          modal-item="Torta com recheiro de Mousse de Limão"
+          tipoItem="Doce"
+        >
+          <img
+            src="assets/img/Doce/TortaComRecheiroDeMousseDeMaracujá.jpg"
+            alt=""
+          />
+        </div>
+        <div
+          class="itemBox all boloPote"
+          modal-item="Bolo de Chocolate com recheiro de Prestígio"
+          tipoItem="Bolo de Pote"
+        >
+          <img
+            src="assets/img/BoloDePote/BP-ChocolateComRecheiroDePrestigio.jpg"
+            alt=""
+          />
+        </div>
+        <div class="itemBox all salgado" modal-item="Torta Vegana de Brócolis" tipoItem="Salgado">
+          <img src="assets/img/Salgado/TortaVeganaDeBrocolis.jpg" alt="" />
+        </div>
+        <div class="itemBox all bolo" modal-item="Bolo Integral de Maçã" tipoItem="Bolo">
+          <img src="assets/img/Bolo/BoloIntregalDeMaca.jpg" alt="" />
+        </div>
+        <div
+          class="itemBox all doce"
+          modal-item="Rosca de Leite Condensado com recheio de Nutella"
+          tipoItem="Doce"
+        >
+          <img
+            src="assets/img/Doce/RoscaNutella.PNG"
+            alt=""
+          />
+        </div>
+        <div class="itemBox all salgado" modal-item="Torta Vegana de Vegetais" tipoItem="Salgado">
+          <img src="assets/img/Salgado/TortaVeganaDeVegetais.jpg" alt="" />
+        </div>
+        <div
+          class="itemBox all bolo"
+          modal-item="Bolo Formigueiro com cobertura de Chocolate"
+          tipoItem="Bolo"
+        >
+          <img
+            src="assets/img/Bolo/BoloFormigueiroComCoberturaDeChocolate.jpg"
+            alt=""
+          />
+        </div>
+        <div class="itemBox all doce" modal-item="Palha Italiana de Paçoca ou Leite Ninho com recheio de Chocolate" tipoItem="Doce">
+          <img src="assets/img/Doce/PalhaItalianaDeLeiteNinho.jpg" alt="" />
+        </div>
+        <div
+          class="itemBox all bolo"
+          modal-item="Bolo com cobertua de Leite Ninho com Nutella"
+          tipoItem="Bolo"
+        >
+          <img
+            src="assets/img/Bolo/BoloComCobertuaDeLeiteNinhoComNutella.jpg"
+            alt=""
+          />
+        </div>
+        <div class="itemBox all doce" modal-item="Torta Holandesa de Pote" tipoItem="Doce">
+          <img src="assets/img/Doce/TortaHolandesaDePote.jpg" alt="" />
+        </div>
+        <div class="itemBox all bolo" modal-item="Bolo com cobertura de Paçoca" tipoItem="Bolo">
+          <img src="assets/img/Bolo/BoloComCoberturaDePaçoca.jpg" alt="" />
+        </div>
+        <div class="itemBox all doce" modal-item="Cookie com Chocolate" tipoItem="Doce">
+          <img src="assets/img/Doce/CookieComChocolate.jpg" alt="" />
+        </div>
+      </div>
+      <div id="paginacao">
+        <div class="container flexboxContainer"></div>
+      </div>
+    </section>
+
+    <section id="contato">
+      <div class="title flexboxContainer">
+        <div class="line"></div>
+        <div class="text"><p>Contato</p></div>
+        <div class="line"></div>
+      </div>
+      <div class="container">
+        <div class="contatoInfo">
+          <div class="colTelefone flexboxContainer">
+            <p>Telefone</p>
+            <ul>
+              <li>(11) 98301-2288</li>
+            </ul>
+            <p>Social</p>
+            <ul class="icons flexboxContainer">
+              <li>
+                <a
+                  href="https://m.facebook.com/BOLU-S-Bolos-sobremesas-e-gostosuras-434195963429524/"
+                  target="_blank"
+                  ><img
+                    class="img-espaço"
+                    src="./assets/img/icons/facebook 1.png"
+                    alt="facebook"
+                /></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.instagram.com/bolu_s_sobremesas_e_gostosuras/"
+                  target="_blank"
+                  ><img
+                    class="img-espaço"
+                    src="./assets/img/icons/instagram.png"
+                    alt="instagram"
+                /></a>
+              </li>
+            </ul>
+          </div>
+          <div class="colHorario flexboxContainer">
+            <p>Horario de atendimento</p>
+            <ul>
+              <li>Seg - Sab: 10 horas ás 20 horas</li>
+            </ul>
+          </div>
+          
+        </div>
+        <div class="contatoImg flexboxContainer">
+          <div class="imgContainer">
+            <img
+            class="imgContainer"
+            src="assets/img/Logo1.PNG"
+            alt="Logo"
+            >
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <footer class="footerClass flexboxContainer">
+      <p class="">Bolu’s, 2020 | Todos os direitos reservados</p>
+    </footer>
+
+    <section id="modalContainer" class="displayNone">
+      <!-- <div class="modal" modal-item="BoloCaramelizadoDeCoco">
+        <div class="modalHeader">
+          <span class="close"></span>
+        </div>
+        <div class="modalConteudo">
+          <div class="imgModal"></div>
+          <div class="texto">
+            <h3>Bolo x</h3>
+          </div>
+        </div>
+      </div> -->
+    </section>
+    <script src="js/script.js"></script>
+  </body>
+</html>
